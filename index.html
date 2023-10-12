@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Unites</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .parent {
+            width: 200px;
+            border: 1px solid black;
+            height: 500px;
+            font-size: 50px;
+        }
+        .item {
+            background-color: green;
+        }
+        /*takes 50% of the content*/
+        .item-percent {
+            width: 50%
+        }
+        /*takes space of whole screen view*/
+        .item-view-width {
+            width: 50vw;
+        }
+        /*if font size is 10 then 2rem will make it 20*/
+        .a-item rem {
+            font-size: 1rem;
+        } /*em takes the root font size 50px*/
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="a-item rem">remmmm</div>
+        <div class="item em">emmmmmmmm</div>
+    </div>
+
+</body>
+</html>

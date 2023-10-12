@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flex-box</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        /*!*container is the area where content should be flexed in*/
+        .container {
+            display: flex;
+            width: 200px;
+            background-color: grey;
+            border: 2px solid black;
+            /*y axis:*/
+            justify-content: flex-end; /*can use also use center, space-between, space around.. */
+            /*x axis:*/
+            align-items: center; /*can use stretch , flex end, center, etc*/
+            /*defining the spaces between elements. align-content: flex start, center, space between..*/
+
+            flex-wrap: wrap;
+
+            /* align-self: flex-end */
+            /* margin-left: auto*/
+            /* flex-direction : column */
+            /* flex direction:row */
+            /*min-height : 50 px */
+            /* flex-grow: 1 */
+            /* flex basis...flex shrink ..... order ....display: inline-flex........*/
+
+
+        }
+        .item {
+            border: 1px solid red;
+            background-color: darkblue;
+            width: 75px;
+            color: yellow;
+            margin: 10px;
+        }
+        .item-1 {
+            height: 58px;
+        }
+        .item-2 {
+            height: 100px;
+        }
+        .item-3 {
+            height: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item-1">one</div>
+        <div class="item item-2">two</div>
+        <div class="item item-3">three</div>
+    </div>
+</body>
+</html>
